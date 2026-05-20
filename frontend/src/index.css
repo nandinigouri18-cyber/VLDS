@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --vlds-red:#dc2626;
+  --vlds-blue:#0369a1;
+}
