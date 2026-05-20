@@ -1,29 +1,36 @@
 {
   "name": "vlds-frontend",
   "version": "1.0.0",
+  "description": "VLDS Healthcare Application - Frontend",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint src"
+    "lint": "eslint src --ext js,jsx",
+    "format": "prettier --write src"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0",
-    "axios": "^1.6.0",
-    "framer-motion": "^10.16.0",
-    "react-icons": "^4.12.0",
-    "zustand": "^4.4.0",
+    "react-router-dom": "^6.14.0",
+    "axios": "^1.4.0",
+    "zustand": "^4.4.1",
+    "framer-motion": "^10.16.4",
+    "react-icons": "^4.11.0",
+    "tailwind-css": "^3.3.3",
+    "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
     "react-hot-toast": "^2.4.1",
-    "swiper": "^11.0.0"
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.0",
-    "vite": "^5.0.0",
-    "tailwindcss": "^3.4.0",
-    "postcss": "^8.4.31",
-    "autoprefixer": "^10.4.16"
+    "@vitejs/plugin-react": "^4.0.4",
+    "vite": "^4.4.9",
+    "tailwindcss": "^3.3.3",
+    "postcss": "^8.4.28",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.1"
   }
 }

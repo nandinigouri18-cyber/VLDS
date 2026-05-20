@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-600 dark:bg-primary-500 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-700 dark:bg-primary-600;
+}
+
+/* Custom Components */
+.btn-primary {
+  @apply px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-secondary-600 hover:bg-secondary-700 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-primary-600 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900 rounded-lg font-semibold transition-all duration-300;
+}
+
+.card {
+  @apply bg-white dark:bg-gray-900 rounded-xl shadow-card hover:shadow-card-hover transition-all duration-300 p-4 md:p-6;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-700 rounded-lg focus:border-primary-600 dark:focus:border-primary-500 focus:outline-none transition-colors duration-300 dark:bg-gray-800 dark:text-white;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-200 rounded-full text-sm font-semibold;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+}
+
+/* Loading Skeleton */
+.skeleton {
+  @apply bg-gray-200 dark:bg-gray-700 rounded-lg animate-pulse;
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  @apply bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/50 dark:border-gray-700/50;
+}
